@@ -371,6 +371,7 @@ func (t *TermUI) View() string {
 	var b bytes.Buffer
 	fmt.Fprint(&b, t.renderCommitSummaryTable(true))
 	fmt.Fprint(&b, t.renderCommitAuthorSummary(0))
+	// todo: add a --limit cli argument
 
 	return b.String()
 }
