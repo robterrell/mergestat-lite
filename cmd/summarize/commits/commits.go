@@ -370,7 +370,7 @@ func (t *TermUI) View() string {
 
 	var b bytes.Buffer
 	fmt.Fprint(&b, t.renderCommitSummaryTable(true))
-	fmt.Fprint(&b, t.renderCommitAuthorSummary(25))
+	fmt.Fprint(&b, t.renderCommitAuthorSummary(0))
 
 	return b.String()
 }
